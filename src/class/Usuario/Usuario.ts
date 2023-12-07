@@ -91,7 +91,7 @@ export abstract class Usuario implements Observer {
     this.emprestimos = emprestimos;
   }
 
-  reservar(livro: Livro, data: string): void {
+  reservar(livro: Livro, data: Date): void {
     this.reservaStrategy?.reservar(this, livro, data);
   }
 

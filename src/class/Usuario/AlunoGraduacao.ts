@@ -15,7 +15,7 @@ export class AlunoGraduacao extends Usuario {
     this.tempoDeEmprestimoDias = 3;
   }
 
-  reservar(livro: Livro, data: string): void {
+  reservar(livro: Livro, data: Date): void {
     this.reservaStrategy?.reservar(this, livro, data);
   }
 }

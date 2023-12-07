@@ -37,7 +37,7 @@ export class Biblioteca {
     if (reservaUsuario && reservaLivro) {
       reservaUsuario
         .getReservaStrategy()
-        ?.reservar(reservaUsuario, reservaLivro, new Date().toISOString());
+        ?.reservar(reservaUsuario, reservaLivro, new Date());
     }
   }
 

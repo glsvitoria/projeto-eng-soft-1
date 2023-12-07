@@ -22,7 +22,7 @@ export class Professor extends Usuario {
     this.qntNotificacoes = qntNotificacoes;
   }
 
-  reservar(livro: Livro, data: string) {
+  reservar(livro: Livro, data: Date) {
     this.reservaStrategy?.reservar(this, livro, data);
   }
 }
